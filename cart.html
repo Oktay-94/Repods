@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warenkorb</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <nav class="container mx-auto py-4 px-6 flex justify-between items-center">
+      <a href="index.html" class="text-gray-800 font-bold text-xl">Startseite</a>
+      <div>
+        <a href="shop.html" class="text-gray-600 hover:text-gray-800 mr-4">Shop</a>
+        <a href="cart.html" class="text-gray-600 hover:text-gray-800 mr-4">Warenkorb</a>
+        <a href="contact.html" class="text-gray-600 hover:text-gray-800">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto py-10 px-6">
+    <h1 class="text-3xl font-bold mb-6">Mein Warenkorb</h1>
+
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+      <table class="w-full">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="py-3 px-4 text-left">Produkt</th>
+            <th class="py-3 px-4 text-left">Preis</th>
+            <th class="py-3 px-4 text-left">Menge</th>
+            <th class="py-3 px-4 text-left">Gesamt</th>
+            <th class="py-3 px-4 text-right">Entfernen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="py-4 px-4 flex items-center">
+              <img src="https://image.pollinations.ai/prompt/beautiful%20refurbished%20white%20apple%20airpods%20pro%20on%20a%20clean%20desk%20cinematic%20lighting?width=100&height=100&nologo=true" alt="AirPods" class="w-16 h-16 object-cover rounded-lg mr-4">
+              <div>
+                <h3 class="text-gray-800 font-medium">Apple AirPods Pro</h3>
+                <p class="text-gray-600 text-sm">Kabellose Kopfhörer</p>
+              </div>
+            </td>
+            <td class="py-4 px-4 text-gray-800 font-medium">249,00 €</td>
+            <td class="py-4 px-4">
+              <div class="flex items-center">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-1 px-3 rounded-l-lg">-</button>
+                <input type="text" value="1" class="bg-gray-200 text-gray-800 py-1 px-2 w-12 text-center" />
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-1 px-3 rounded-r-lg">+</button>
+              </div>
+            </td>
+            <td class="py-4 px-4 text-gray-800 font-medium">249,00 €</td>
+            <td class="py-4 px-4 text-right">
+              <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+          <tr class="border-b">
+            <td class="py-4 px-4 flex items-center">
+              <img src="https://image.pollinations.ai/prompt/beautiful%20refurbished%20white%20apple%20macbook%20pro%2014%20inch%20on%20a%20clean%20desk%20cinematic%20lighting?width=100&height=100&nologo=true" alt="MacBook Pro" class="w-16 h-16 object-cover rounded-lg mr-4">
+              <div>
+                <h3 class="text-gray-800 font-medium">Apple MacBook Pro 14"</h3>
+                <p class="text-gray-600 text-sm">M1 Pro Chip, 16 GB RAM</p>
+              </div>
+            </td>
+            <td class="py-4 px-4 text-gray-800 font-medium">2.249,00 €</td>
+            <td class="py-4 px-4">
+              <div class="flex items-center">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-1 px-3 rounded-l-lg">-</button>
+                <input type="text" value="1" class="bg-gray-200 text-gray-800 py-1 px-2 w-12 text-center" />
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-1 px-3 rounded-r-lg">+</button>
+              </div>
+            </td>
+            <td class="py-4 px-4 text-gray-800 font-medium">2.249,00 €</td>
+            <td class="py-4 px-4 text-right">
+              <button class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                </svg>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden mt-6 p-6">
+      <div class="flex justify-between items-center">
+        <h2 class="text-2xl font-bold">Gesamtbetrag</h2>
+        <p class="text-2xl font-bold text-gray-800">2.498,00 €</p>
+      </div>
+      <div class="mt
