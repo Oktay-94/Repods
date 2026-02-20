@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto py-4 flex justify-between items-center">
+      <a href="index.html" class="text-gray-800 font-bold text-xl">Meine Website</a>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="text-gray-600 hover:text-gray-800">Startseite</a></li>
+        <li><a href="shop.html" class="text-gray-600 hover:text-gray-800">Shop</a></li>
+        <li><a href="cart.html" class="text-gray-600 hover:text-gray-800">Warenkorb</a></li>
+        <li><a href="contact.html" class="text-gray-600 hover:text-gray-800 font-bold">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto my-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Kontaktieren Sie uns</h1>
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-2xl mx-auto">
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+          <input type="text" id="name" name="name" required class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-1 px-4 py-2">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-2">E-Mail-Adresse</label>
+          <input type="email" id="email" name="email" required class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-1 px-4 py-2">
+        </div>
+        <div>
+          <label for="phone" class="block text-gray-700 font-medium mb-2">Telefonnummer (optional)</label>
+          <input type="tel" id="phone" name="phone" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-1 px-4 py-2">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 font-medium mb-2">Nachricht</label>
+          <textarea id="message" name="message" required class="w-full border-gray-300 rounded-lg shadow-sm focus:border-indigo-500 focus:ring-indigo-500 focus:ring-1 px-4 py-2 h-24 resize-none"></textarea>
+        </div>
+        <button type="submit" class="bg-indigo-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Senden</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <p>&copy; 2023 Meine Website. Alle Rechte vorbehalten.</p>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-gray-400">Impressum</a></li>
+          <li><a href="#" class="hover:text-gray-400">Datenschutz</a></li>
+          <li><a href="#" class="hover:text-gray-400">AGB</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
